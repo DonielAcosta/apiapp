@@ -32,6 +32,19 @@ $routes->setAutoRoute(true);
 // $routes->get('/', 'Home::index');
 $routes->resource('products');
 $routes->resource('restmovie', ['controller' => 'RestMovie']);
+
+
+// $routes->post('/create', 'Restmovie::create');
+$routes->post('restmovie', 'RestMovie::create');
+// $routes->put('/restmovie/(:num)', 'Restmovie::update/$1');
+$routes->put('/movie/update/(:num)', 'Restmovie::update/$1');
+/******************** */
+$routes->resource('Scli');
+$routes->get('scli/search/(:segment)/(:segment)', 'Scli::search/$1/$2');
+
+
+$routes->resource('Usuario');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

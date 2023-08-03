@@ -38,6 +38,10 @@ class Validation extends BaseConfig
         'single' => 'CodeIgniter\Validation\Views\single',
     ];
 
+    public $movies = [
+        'title' => 'required|min_length[3]|max_length[255]',
+        'description' => 'min_length[3]|max_length[5000]'
+    ];
     // --------------------------------------------------------------------
     // Rules
     // --------------------------------------------------------------------

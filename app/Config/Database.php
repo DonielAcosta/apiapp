@@ -29,7 +29,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'datasis',
         'password' => '',
-        'database' => 'apiapp',
+        'database' => 'api',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
