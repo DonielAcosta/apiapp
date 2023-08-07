@@ -1,0 +1,3 @@
+CRITICAL - 2023-08-07 15:31:27 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 19005440 bytes)
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 489.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

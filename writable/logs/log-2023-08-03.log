@@ -15,3 +15,6 @@ in APPPATH/Controllers/Usuario.php on line 17.
  3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
  4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
  5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/srv/www/htdocs/app/public/index.php')
+CRITICAL - 2023-08-03 20:53:04 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 19005440 bytes)
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 489.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
