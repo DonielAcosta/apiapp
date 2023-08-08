@@ -1,3 +1,39 @@
 CRITICAL - 2023-08-07 15:31:27 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 19005440 bytes)
 in SYSTEMPATH/HTTP/ResponseTrait.php on line 489.
  1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-07 18:22:35 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH/Controllers/Sinv.php on line 4.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-07 18:26:15 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 10489856 bytes)
+in SYSTEMPATH/Format/JSONFormatter.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-07 18:27:00 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 10489856 bytes)
+in SYSTEMPATH/Format/JSONFormatter.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-07 18:27:14 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 10489856 bytes)
+in SYSTEMPATH/Format/JSONFormatter.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-07 18:27:41 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 12288 bytes)
+in SYSTEMPATH/Database/MySQLi/Result.php on line 138.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-07 18:29:12 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 23072768 bytes)
+in SYSTEMPATH/Format/JSONFormatter.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-07 18:29:25 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 23072768 bytes)
+in SYSTEMPATH/Format/JSONFormatter.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-07 18:29:35 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 12288 bytes)
+in SYSTEMPATH/Database/MySQLi/Result.php on line 138.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-07 18:29:52 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 36122624 bytes)
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 489.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-07 18:30:17 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 36122624 bytes)
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 489.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-07 18:32:53 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 12288 bytes)
+in SYSTEMPATH/Database/MySQLi/Result.php on line 138.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-07 18:35:46 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 12288 bytes)
+in SYSTEMPATH/Database/MySQLi/Result.php on line 138.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

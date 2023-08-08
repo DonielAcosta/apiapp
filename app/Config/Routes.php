@@ -42,6 +42,9 @@ $routes->put('/movie/update/(:num)', 'Restmovie::update/$1');
 $routes->resource('Scli');
 $routes->get('scli/search/(:segment)/(:segment)', 'Scli::search/$1/$2');
 
+$routes->resource('sinv');
+$routes->get('sinv/search/(:segment)/(:segment)', 'Sinv::search/$1/$2');
+
 
 $routes->resource('Usuario');
 

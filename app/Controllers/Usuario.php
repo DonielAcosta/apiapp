@@ -12,12 +12,18 @@ class Usuario extends ResourceController{
     protected $modelName = 'App\Models\UsuarioModel';
     protected $format = 'json';
         // get all product
-    public function index()
-    {
+    // public function index()
+    // {
+    //     $model = new UsuarioModel();
+    //     $data = $model->findAll();
+    //     return $this->respond($data, 200);
+    // }
+    public function index(){
         $model = new UsuarioModel();
-        $data = $model->findAll();
+        $data = $model->select('us_codigo, us_clave, us_nombre')->findAll();
         return $this->respond($data, 200);
     }
+
 
     public function show($id = null){
         $model = new \App\Models\UsuarioModel(); // Instanciar el modelo correctamente

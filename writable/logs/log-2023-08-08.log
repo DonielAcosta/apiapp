@@ -1,0 +1,6 @@
+CRITICAL - 2023-08-08 12:40:23 --> Class 'App\Controllers\UsuarioModel' not found
+in APPPATH/Controllers/Scli.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Scli->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
