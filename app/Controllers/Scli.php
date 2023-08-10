@@ -31,45 +31,39 @@ class Scli extends ResourceController{
         return $this->respond($scli, 200);
     }
 
-    public function search($field = null, $value = null){
-        $model = new \App\Models\ScliModel();
-    
-        if ($field === null || $value === null) {
-            return $this->respond(["message" => "Parámetros de búsqueda incompletos"], 400);
-        }
-    
-        // Realizar la búsqueda por coincidencia
-        $result = $model->like($field, $value)->findAll();
-    
-        if (empty($result)) {
-            return $this->respond(["message" => "No se encontraron coincidencias"], 404);
-        }
-    
-        return $this->respond($result, 200);
-    }
-    // public function search($value = null)
-    // {
+    // public function search($field = null, $value = null){
     //     $model = new \App\Models\ScliModel();
-
-    //     if ($value === null) {
-    //         return $this->respond(["message" => "Valor de búsqueda no proporcionado"], 400);
+    
+    //     if ($field === null || $value === null) {
+    //         return $this->respond(["message" => "Parámetros de búsqueda incompletos"], 400);
     //     }
-
-    //     $result = [];
-        
-    //     foreach ($model->allowedFields as $field) {
-    //         $queryResult = $model->like($field, $value)->findAll();
-    //         if (!empty($queryResult)) {
-    //             $result[$field] = $queryResult;
-    //         }
-    //     }
-
+    
+    //     // Realizar la búsqueda por coincidencia
+    //     $result = $model->like($field, $value)->findAll();
+    
     //     if (empty($result)) {
     //         return $this->respond(["message" => "No se encontraron coincidencias"], 404);
     //     }
-
+    
     //     return $this->respond($result, 200);
     // }
+    public function search($name = null)
+    {
+        $model = new \App\Models\ScliModel();
+    
+        if ($name === null) {
+            return $this->respond(["message" => "Nombre de búsqueda no proporcionado"], 400);
+        }
+    
+        $queryResult = $model->like('nombre', $name)->findAll();
+    
+        if (empty($queryResult)) {
+            return $this->respond(["message" => "No se encontraron coincidencias"], 404);
+        }
+    
+        return $this->respond($queryResult, 200);
+    }
+    
 
 
 }
