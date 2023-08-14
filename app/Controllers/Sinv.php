@@ -14,7 +14,7 @@ class Sinv extends ResourceController{
 
     public function index(){
         $model = new SinvModel();
-        $data = $model->select('descrip, precio1,id')   
+        $data = $model->select('descrip, precio1,prvreg,id')   
                     ->where('precio1 IS NOT NULL')
                     ->where('precio1 >', 0)
                     ->findAll(50); // Mover el límite aquí
@@ -95,16 +95,15 @@ class Sinv extends ResourceController{
 
     //     return $this->respond($result, 200);
     // }
-    public function search($name = null)
-    {
+    public function search($name = null){
         $model = new \App\Models\SinvModel();
     
         if ($name === null) {
             return $this->respond(["message" => "Nombre de búsqueda no proporcionado"], 400);
         }
     
-        $queryResult = $model->select('descrip, precio1, id')
-            ->like('descrip', '%' . $name . '%')
+        $queryResult = $model->select('descrip, precio1,prvreg, id')
+            ->like('descrip', '%' . $name .'%' )
             ->where('precio1 IS NOT NULL')
             ->where('precio1 >', 0)
             ->findAll(100); // Mover el límite aquí
@@ -117,6 +116,30 @@ class Sinv extends ResourceController{
     }
     
     
+    // public function search($value = null)
+    // {
+    //     $model = new \App\Models\SinvModel();
+
+    //     if ($value === null) {
+    //         return $this->respond(["message" => "Valor de búsqueda no proporcionado"], 400);
+    //     }
+
+    //     $result = [];
+        
+    //     foreach ($model->allowedFields as $field) {
+    //         $queryResult = $model->like($field, $value)->findAll();
+    //         if (!empty($queryResult)) {
+    //             $result[$field] = $queryResult;
+    //         }
+    //     }
+
+    //     if (empty($result)) {
+    //         return $this->respond(["message" => "No se encontraron coincidencias"], 404);
+    //     }
+
+    //     return $this->respond($result, 200);
+    // }
+
     
     
     

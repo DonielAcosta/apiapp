@@ -4,6 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
+
 class SinvModel extends Model{
     protected $table = 'sinv';
     protected $primaryKey = 'id';
@@ -19,6 +20,5 @@ class SinvModel extends Model{
                     ->where(['id'=>$id])
                     ->first();
       } 
-
 
 }

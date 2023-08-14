@@ -48,6 +48,13 @@ $routes->get('sinv/search/(:segment)/(:segment)', 'Sinv::search/$1/$2');
 
 $routes->resource('Usuario');
 
+// para las imagens
+// $routes->resource('upload', ['controller' => 'Upload']); // Para manejar todas las rutas CRUD
+
+// O si solo deseas definir rutas específicas:
+$routes->post('upload', 'Upload::upload'); // Para la subida de imágenes
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

@@ -15,7 +15,7 @@ class Scli extends ResourceController{
 
     public function index(){
         $model = new ScliModel();
-        $data = $model->select('cliente, nombre,clave')->findAll();
+        $data = $model->select('cliente, nombre,rifci,clave')->findAll();
         return $this->respond($data, 200);
     }
 
@@ -49,22 +49,35 @@ class Scli extends ResourceController{
     // }
     public function search($name = null)
     {
+        // Crear una instancia del modelo ScliModel
         $model = new \App\Models\ScliModel();
-    
-        if ($name === null) {
+        
+        // Verificar si el parámetro $name está vacío
+        if (empty($name)) {
             return $this->respond(["message" => "Nombre de búsqueda no proporcionado"], 400);
         }
-    
-        $queryResult = $model->like('nombre', $name)->findAll();
-    
+        
+        // Especificar los campos que deseas obtener
+        $fields = ['cliente', 'nombre', 'rifci'];
+        
+        // Realizar la búsqueda en la base de datos y obtener solo los campos especificados
+        $queryResult = $model->select($fields)
+                             ->like('cliente', $name)
+                             ->orLike('nombre', $name)
+                             ->orLike('rifci', $name)
+                             ->findAll();
+        
+        // Verificar si se encontraron resultados
         if (empty($queryResult)) {
             return $this->respond(["message" => "No se encontraron coincidencias"], 404);
         }
-    
+        
+        // Devolver los resultados de la búsqueda
         return $this->respond($queryResult, 200);
     }
     
-
+    
+    
 
 }
 

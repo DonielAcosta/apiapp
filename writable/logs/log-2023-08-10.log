@@ -52,3 +52,544 @@ in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
  9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
 10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
 11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-10 15:02:15 --> mysqli_sql_exception: Unknown column 'a.id' in 'field list' in /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /srv/www/htdocs/app/app/Controllers/Sinv.php(23): CodeIgniter\BaseModel->findAll()
+#7 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Sinv->index()
+#8 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/www/htdocs/app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-08-10 15:02:15 --> Unknown column 'a.id' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Sinv.php(23): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-10 15:03:24 --> mysqli_sql_exception: Unknown column 'a.id' in 'field list' in /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /srv/www/htdocs/app/app/Controllers/Sinv.php(23): CodeIgniter\BaseModel->findAll()
+#7 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Sinv->index()
+#8 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/www/htdocs/app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-08-10 15:03:24 --> Unknown column 'a.id' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Sinv.php(23): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-10 15:03:58 --> mysqli_sql_exception: Column 'id' in field list is ambiguous in /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /srv/www/htdocs/app/app/Controllers/Sinv.php(23): CodeIgniter\BaseModel->findAll()
+#7 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Sinv->index()
+#8 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/www/htdocs/app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-08-10 15:03:58 --> Column 'id' in field list is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Sinv.php(23): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 15:39:52 --> syntax error, unexpected '$builder' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH/Controllers/Sinv.php on line 27.
+ 1 SYSTEMPATH/Router/Router.php(510): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH/Router/Router.php(208): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH/CodeIgniter.php(813): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 15:39:57 --> syntax error, unexpected '$builder' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH/Controllers/Sinv.php on line 27.
+ 1 SYSTEMPATH/Router/Router.php(510): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH/Router/Router.php(208): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH/CodeIgniter.php(813): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 15:40:04 --> syntax error, unexpected '$builder' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH/Controllers/Sinv.php on line 27.
+ 1 SYSTEMPATH/Router/Router.php(510): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH/Router/Router.php(208): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH/CodeIgniter.php(813): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 15:40:06 --> syntax error, unexpected '$builder' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH/Controllers/Sinv.php on line 27.
+ 1 SYSTEMPATH/Router/Router.php(510): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH/Router/Router.php(208): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH/CodeIgniter.php(813): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 15:40:12 --> syntax error, unexpected '$builder' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH/Controllers/Sinv.php on line 27.
+ 1 SYSTEMPATH/Router/Router.php(510): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH/Router/Router.php(208): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH/CodeIgniter.php(813): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 15:41:39 --> syntax error, unexpected '$a' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH/Controllers/Sinv.php on line 29.
+ 1 SYSTEMPATH/Router/Router.php(510): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH/Router/Router.php(208): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH/CodeIgniter.php(813): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 15:41:42 --> syntax error, unexpected '$a' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH/Controllers/Sinv.php on line 29.
+ 1 SYSTEMPATH/Router/Router.php(510): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH/Router/Router.php(208): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH/CodeIgniter.php(813): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 15:41:46 --> syntax error, unexpected '$a' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH/Controllers/Sinv.php on line 29.
+ 1 SYSTEMPATH/Router/Router.php(510): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH/Router/Router.php(208): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH/CodeIgniter.php(813): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 15:42:03 --> syntax error, unexpected '$a' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH/Controllers/Sinv.php on line 29.
+ 1 SYSTEMPATH/Router/Router.php(510): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH/Router/Router.php(208): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH/CodeIgniter.php(813): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 15:43:49 --> syntax error, unexpected '$builder' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH/Controllers/Sinv.php on line 27.
+ 1 SYSTEMPATH/Router/Router.php(510): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH/Router/Router.php(208): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH/CodeIgniter.php(813): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 15:43:55 --> syntax error, unexpected '$builder' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH/Controllers/Sinv.php on line 27.
+ 1 SYSTEMPATH/Router/Router.php(510): CodeIgniter\Router\AutoRouter->getRoute()
+ 2 SYSTEMPATH/Router/Router.php(208): CodeIgniter\Router\Router->autoRoute()
+ 3 SYSTEMPATH/CodeIgniter.php(813): CodeIgniter\Router\Router->handle()
+ 4 SYSTEMPATH/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-10 15:49:16 --> mysqli_sql_exception: Column 'id' in field list is ambiguous in /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /srv/www/htdocs/app/app/Models/SinvModel.php(17): CodeIgniter\BaseModel->findAll()
+#7 /srv/www/htdocs/app/app/Controllers/Sinv.php(25): App\Models\SinvModel->get()
+#8 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Sinv->index()
+#9 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#11 /srv/www/htdocs/app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-08-10 15:49:16 --> Column 'id' in field list is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Models/SinvModel.php(17): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/Sinv.php(25): App\Models\SinvModel->get()
+ 9 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-10 15:49:57 --> mysqli_sql_exception: Column 'id' in field list is ambiguous in /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /srv/www/htdocs/app/app/Models/SinvModel.php(17): CodeIgniter\BaseModel->findAll()
+#7 /srv/www/htdocs/app/app/Controllers/Sinv.php(25): App\Models\SinvModel->get()
+#8 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Sinv->index()
+#9 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#11 /srv/www/htdocs/app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-08-10 15:49:57 --> Column 'id' in field list is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Models/SinvModel.php(17): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/Sinv.php(25): App\Models\SinvModel->get()
+ 9 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-10 15:49:59 --> mysqli_sql_exception: Column 'id' in field list is ambiguous in /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /srv/www/htdocs/app/app/Models/SinvModel.php(17): CodeIgniter\BaseModel->findAll()
+#7 /srv/www/htdocs/app/app/Controllers/Sinv.php(25): App\Models\SinvModel->get()
+#8 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Sinv->index()
+#9 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#11 /srv/www/htdocs/app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-08-10 15:49:59 --> Column 'id' in field list is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Models/SinvModel.php(17): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/Sinv.php(25): App\Models\SinvModel->get()
+ 9 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-10 16:01:50 --> mysqli_sql_exception: Column 'id' in field list is ambiguous in /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /srv/www/htdocs/app/app/Models/SinvModel.php(17): CodeIgniter\BaseModel->findAll()
+#7 /srv/www/htdocs/app/app/Controllers/Sinv.php(25): App\Models\SinvModel->get()
+#8 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Sinv->index()
+#9 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#11 /srv/www/htdocs/app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-08-10 16:01:50 --> Column 'id' in field list is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Models/SinvModel.php(17): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/Sinv.php(25): App\Models\SinvModel->get()
+ 9 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-10 16:02:12 --> mysqli_sql_exception: Column 'id' in field list is ambiguous in /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /srv/www/htdocs/app/app/Models/SinvModel.php(17): CodeIgniter\BaseModel->findAll()
+#7 /srv/www/htdocs/app/app/Controllers/Sinv.php(25): App\Models\SinvModel->get()
+#8 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Sinv->index()
+#9 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#11 /srv/www/htdocs/app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-08-10 16:02:12 --> Column 'id' in field list is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Models/SinvModel.php(17): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/Sinv.php(25): App\Models\SinvModel->get()
+ 9 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-10 16:03:51 --> mysqli_sql_exception: Column 'id' in field list is ambiguous in /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /srv/www/htdocs/app/app/Models/SinvModel.php(17): CodeIgniter\BaseModel->findAll()
+#7 /srv/www/htdocs/app/app/Controllers/Sinv.php(25): App\Models\SinvModel->get()
+#8 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Sinv->index()
+#9 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#11 /srv/www/htdocs/app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-08-10 16:03:51 --> Column 'id' in field list is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Models/SinvModel.php(17): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/Sinv.php(25): App\Models\SinvModel->get()
+ 9 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 16:04:27 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 16:04:47 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 16:05:08 --> Call to a member function getResultArray() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 16:05:59 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 16:06:00 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 16:06:50 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 16:06:51 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 16:06:52 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 16:07:16 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 16:09:18 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 16:10:04 --> Call to a member function getResultArray() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 16:10:50 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 16:12:40 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 16:12:41 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 16:15:03 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 16:30:39 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 16:30:50 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 16:31:13 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 16:47:43 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 18:14:36 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 18:15:47 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 18:17:18 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 18:34:05 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 18:34:54 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 18:35:45 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 18:37:45 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 18:39:28 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 18:40:08 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 18:43:47 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 18:50:19 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 18:53:35 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 19:32:28 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 19:33:37 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Sinv.php on line 32.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,81 @@
+ERROR - 2023-08-11 12:36:03 --> mysqli_sql_exception: Unknown column 'dproveed' in 'where clause' in /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /srv/www/htdocs/app/app/Controllers/Sinv.php(130): CodeIgniter\BaseModel->findAll()
+#7 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Sinv->search()
+#8 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/www/htdocs/app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-08-11 12:36:03 --> Unknown column 'dproveed' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Sinv.php(130): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Sinv->search()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-11 14:42:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`nombre,rifci` LIKE '%centro%' ESCAPE '!'' at line 3 in /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /srv/www/htdocs/app/app/Controllers/Scli.php(58): CodeIgniter\BaseModel->findAll()
+#7 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Scli->search()
+#8 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/www/htdocs/app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-08-11 14:42:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`nombre,rifci` LIKE '%centro%' ESCAPE '!'' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Scli.php(58): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Scli->search()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-11 18:38:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`nombre,rifci` LIKE '%centro%' ESCAPE '!'' at line 3 in /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /srv/www/htdocs/app/app/Controllers/Scli.php(58): CodeIgniter\BaseModel->findAll()
+#7 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Scli->search()
+#8 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /srv/www/htdocs/app/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /srv/www/htdocs/app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-08-11 18:38:52 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`nombre,rifci` LIKE '%centro%' ESCAPE '!'' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Scli.php(58): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Scli->search()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

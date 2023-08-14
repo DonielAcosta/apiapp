@@ -20,7 +20,7 @@ class Usuario extends ResourceController{
     // }
     public function index(){
         $model = new UsuarioModel();
-        $data = $model->select('us_codigo, us_clave, us_nombre')->findAll();
+        $data = $model->select('us_codigo, us_clave, us_nombre,clipro')->findAll();
         return $this->respond($data, 200);
     }
 
